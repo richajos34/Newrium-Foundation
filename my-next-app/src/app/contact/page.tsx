@@ -1,6 +1,7 @@
 export default function Contact(){
     return (
-      <section className="space-y-3">
+      <div>
+         {/* do we need a nav bar here */}
         <h2 className="text-2xl font-bold">{/* TODO: Title*/}</h2>
         <form className="max-w-md grid gap-3">
           {/* 
@@ -9,6 +10,8 @@ export default function Contact(){
           */}
 
         </form>
-      </section>
+
+        {/* do we need a footer here */}
+      </div>
     )
   }
