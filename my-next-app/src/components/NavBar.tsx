@@ -19,14 +19,12 @@ export default function NavBar(){
   ]
 
   return (
-    <nav className="sticky top-0 z-20 border-b" style={{borderColor:'var(--border)'}}>
-      <div className="container flex items-center justify-between py-3 backdrop-blur">
+    <nav>
+      <div>
         <Link href="/" className="flex items-center gap-2 font-bold">
           <span className="size-7 rounded-md" style={{background:'var(--accent)'}} />
           <span>Newrium</span>
         </Link>
-
-        <button className="md:hidden btn-secondary border rounded-xl px-3 py-1" onClick={()=>setOpen(o=>!o)} aria-expanded={open} aria-controls="nav-links">Menu</button>
 
         <div id="nav-links" className={`md:flex gap-2 ${open? 'block' : 'hidden'} md:block`}>
           {links.map(l => {
