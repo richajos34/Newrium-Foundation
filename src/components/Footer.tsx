@@ -1,13 +1,19 @@
-export default function Footer(){
-    const year = new Date().getFullYear()
-    return (
-      <footer>
-        <div>
-          {/* 
-            TODO: What information might we need for a footer?
-            Implement a simple footer that can bring you back to the top of the screen of you scroll too far
-           */}
-        </div>
-      </footer>
-    )
-  }
+export default function Footer() {
+  const year = new Date().getFullYear();
+
+  return (
+    <footer className="bg-blue-600 text-white text-center py-6">
+      <div className="mb-2 font-bold text-lg">Newrium Foundation</div>
+
+      <div className="text-white text-sm">
+        &copy; {year} Newrium Foundation. All rights reserved.
+      </div>
+
+      <div className="mt-2">
+        <a href="#main" className="underline">
+          ↑ Back to top
+        </a>
+      </div>
+    </footer>
+  );
+}
