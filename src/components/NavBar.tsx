@@ -12,6 +12,7 @@ export default function NavBar(){
   const links = [
     { href: '/', label: 'Home' },
     { href: '/example-page', label: 'Example' },
+    { href: '/self-actualization', label: 'Self-Actualization' },
     {/* 
     What other links do we need based on the task list? 
     Hint: "true wealth", "true self", "self-actualization", "parenting" pages 
