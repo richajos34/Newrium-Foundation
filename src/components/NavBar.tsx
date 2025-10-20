@@ -11,7 +11,8 @@ export default function NavBar(){
   // Try looking in the /app directory and do reaserch on how next work. Some of these links might not work...
   const links = [
     { href: '/', label: 'Home' },
-    { href: '/example-page', label: 'Example' },
+    { href: '/example-page', label: 'Example' }
+    { href: '/true-self', label: 'True Self'}
     {/* 
     What other links do we need based on the task list? 
     Hint: "true wealth", "true self", "self-actualization", "parenting" pages 
