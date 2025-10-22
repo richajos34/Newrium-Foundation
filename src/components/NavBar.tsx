@@ -7,14 +7,12 @@ export default function NavBar(){
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
 
-  // TODO: We've implemented some of the routes but why are some not working?
-  // Try looking in the /app directory and do reaserch on how next work. Some of these links might not work...
   const links = [
     { href: '/', label: 'Home' },
-    { href: '/example-page', label: 'Example' },
     { href: '/true-wealth', label: 'True Wealth' },
-    { href: '/true-self', label: 'True Self'},
+    { href: '/true-self', label: 'True Self' },
     { href: '/self-actualization', label: 'Self-Actualization' },
+    { href: '/parenting', label: 'Parenting' },
     {/* 
     What other links do we need based on the task list? 
     Hint: "true wealth", "true self", "self-actualization", "parenting" pages 
@@ -22,22 +20,48 @@ export default function NavBar(){
   ]
 
   return (
-    <nav>
-      <div>
-        <Link href="/" className="flex items-center gap-2 font-bold">
-          <span className="size-7 rounded-md" style={{background:'var(--accent)'}} />
-          <span>Newrium</span>
-        </Link>
+    <nav className="bg-background border-b w-full fixed top-0 left-0 right-0 z-50">
+      <div className="flex justify-between items-center h-16 px-4 sm:px-6 lg:px-8">
+          <Link href="/" className="flex items-center gap-2 font-bold">
+            <span className="size-7 rounded-md" style={{background:'var(--accent)'}} />
+            <span>Newrium</span>
+          </Link>
 
-        <div id="nav-links" className={`md:flex gap-2 ${open? 'block' : 'hidden'} md:block`}>
-          {links.map(l => {
-            const active = pathname === l.href
-            return (
-              <div>
-                {/*What do we want to return? Maybe a Link? Look at the one above! */}
-               </div>
-            )
-          })}
+          {/* Mobile menu button */}
+          <button
+            onClick={() => setOpen(!open)}
+            className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent"
+            aria-expanded="false"
+          >
+            <span className="sr-only">Open main menu</span>
+            <svg className={`${open ? 'hidden' : 'block'} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg className={`${open ? 'block' : 'hidden'} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+
+        <div id="nav-links" className={`${open ? 'block' : 'hidden'} md:flex gap-2 md:block`}>
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 md:flex md:space-y-0 md:space-x-2">
+            {links.map(l => {
+              const active = pathname === l.href
+              return (
+                <Link 
+                  key={l.href}
+                  href={l.href} 
+                  className={`block px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                    active 
+                      ? 'bg-accent text-accent-foreground' 
+                      : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                  }`}
+                  onClick={() => setOpen(false)}
+                >
+                  {l.label}
+                </Link>
+              )
+            })}
+          </div>
         </div>
       </div>
     </nav>
