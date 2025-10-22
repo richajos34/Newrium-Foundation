@@ -8,10 +8,15 @@ export default function NavBar(){
   const [open, setOpen] = useState(false)
 
   const links = [
+    { href: '/', label: 'Home' },
     { href: '/true-wealth', label: 'True Wealth' },
     { href: '/true-self', label: 'True Self' },
     { href: '/self-actualization', label: 'Self-Actualization' },
     { href: '/parenting', label: 'Parenting' },
+    {/* 
+    What other links do we need based on the task list? 
+    Hint: "true wealth", "true self", "self-actualization", "parenting" pages 
+  */}
   ]
 
   return (
