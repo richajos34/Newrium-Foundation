@@ -1,3 +1,5 @@
+import Carousel from "@/components/Carousel";
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
