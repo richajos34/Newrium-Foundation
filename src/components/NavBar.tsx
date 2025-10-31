@@ -13,11 +13,11 @@ export default function NavBar(){
     { href: '/true-self', label: 'True Self' },
     { href: '/self-actualization', label: 'Self-Actualization' },
     { href: '/parenting', label: 'Parenting' },
+  ]
     {/* 
     What other links do we need based on the task list? 
     Hint: "true wealth", "true self", "self-actualization", "parenting" pages 
   */}
-  ]
 
   return (
     <nav className="bg-background border-b w-full fixed top-0 left-0 right-0 z-50">
