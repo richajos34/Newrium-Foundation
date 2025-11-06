@@ -28,9 +28,10 @@ export default function BlogBanner({
             <p className = "text-2xl">
                 {articleSummary}
             </p>
-            <p className = "text-2xl mt-auto">
-                Read More (need button component)
-            </p>
+            <button 
+                className="flex items-center space-x-2 text-white border-2 border-gray-400 hover:border-white px-8 py-2 rounded-full bg-gray-500 hover:bg-white hover:text-gray-900 transition-all duration-300 mt-auto">
+                <span>Read More</span>
+            </button>
         </div>
     </div>
     );
