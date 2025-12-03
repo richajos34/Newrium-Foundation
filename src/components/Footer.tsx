@@ -4,7 +4,7 @@ import { Mail, LinkedinIcon } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-black text-white py-0 px-8" style={{ fontFamily: 'Poppins, sans-serif' }}>
+    <footer className="bg-black text-white py-7 px-8" style={{ fontFamily: 'Poppins, sans-serif' }}>
       <div className="max-w-7xl mx-auto">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
