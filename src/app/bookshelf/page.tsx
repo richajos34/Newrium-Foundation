@@ -6,7 +6,7 @@ export default function FAQ() {
   return <div>
     <BookCard author="Author" description="Description" coverUrl="https://images.unsplash.com/photo-1610116306796-6fea9f4fae38?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" title="My Favorite Books"></BookCard>
     <BlogCard href="" imageSrc="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=688" title="My Favorite Books"></BlogCard>
-    <div style={{ width: "1200px", backgroundColor: "gray", padding: "50px" }}>
+    <div className='w-full bg-gray-300'>
       {(() => {
         const images = [
           "https://images.unsplash.com/photo-1610116306796-6fea9f4fae38?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1170",

@@ -37,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="pt-3">
         </div>
         {/* Main page content */}
-        <main id="main" className="container my-8">
+        <main id="main" className="my-8">
           {children}
         </main>
 
