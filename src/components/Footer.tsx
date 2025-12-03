@@ -5,7 +5,7 @@ import { Mail, LinkedinIcon } from 'lucide-react';
 const Footer: React.FC = () => {
   return (
     <footer className="bg-black text-white py-7 px-8" style={{ fontFamily: 'Poppins, sans-serif' }}>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-none mx-auto">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Brand Section */}
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
               <button 
                 className="px-6 py-2 rounded-r-full text-sm font-medium transition-colors"
                 style={{ backgroundColor: '#55A5BC', fontFamily: 'Poppins, sans-serif' }}
-                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0A0908'}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#444444'}
                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#55A5BC'}
               >
                 Submit
@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
               href="#" 
               className="w-10 h-10 rounded-full flex items-center justify-center transition-colors"
               style={{ backgroundColor: '#55A5BC' }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0A0908'}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#444444'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#55A5BC'}
               aria-label="Email"
             >
@@ -91,7 +91,7 @@ const Footer: React.FC = () => {
               href="#" 
               className="w-10 h-10 rounded-full flex items-center justify-center transition-colors"
               style={{ backgroundColor: '#55A5BC' }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0A0908'}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#444444'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#55A5BC'}
               aria-label="LinkedIn"
             >

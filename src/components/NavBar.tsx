@@ -22,7 +22,7 @@ export default function NavBar(){
   return (
     <nav className="bg-background border-b w-full fixed left-0 right-0 top-0 z-50">
       <div className="flex justify-between items-center h-16 px-4 sm:px-6 lg:px-8 bg-(--foreground)">
-          <Link href="/" className="flex items-center gap-2 font-semibold text-(--background)">
+          <Link href="/" className="flex items-center gap-2 font-bold text-(--background)">
             <span className="size-7 rounded-md" style={{background:'var(--accent)'}} />
             <span>Newrium Foundation Inc.</span>
           </Link>
@@ -42,20 +42,16 @@ export default function NavBar(){
             </svg>
           </button>
 
-        <div id="nav-links" className={`${open ? 'block' : 'hidden'} md:flex gap-2 md:block`}>
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 md:flex md:space-y-0 md:space-x-2">
+        <div id="nav-links" className={`${open ? 'block' : 'hidden'} md:items-center md:flex gap-2`}>
+          <div className="px-2 pt-2 pb-3 sm:px-3 flex flex-col md:flex-row md:items-center gap-1 md:gap-2">
             {links.map(l => {
               const active = pathname === l.href
               return (
                 <Link 
                   key={l.href}
                   href={l.href} 
-                  className={`block px-3 py-2 rounded-md text-sm font-medium 
-                    text-(--background) hover:font-bold font-poppins ${
-                    active 
-                      ? 'text-(--background)' 
-                      : 'text-(--background)'
-                  }`}
+                  className={`block px-3 py-2 rounded-md text-sm font-medium text-neutral-300
+                    hover:text-white font-poppins transition duration-200 ease-in-out`}
                   onClick={() => setOpen(false)}
                 >
                   {l.label}

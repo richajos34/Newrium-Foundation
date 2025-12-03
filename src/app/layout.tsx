@@ -18,7 +18,7 @@ const poppins = Poppins({
 const dmSans = DM_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
-  variable: "--font-dm",        // <-- ADD THIS
+  variable: "--font-dm",
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
