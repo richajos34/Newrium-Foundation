@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import './globals.css'
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import Hero from '@/components/Hero';
 
 export const metadata: Metadata = {
   title: 'Student Template',
@@ -22,8 +21,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* NavBar */}
         <NavBar />
-        <Hero />
-
+        <div className="pt-3">
+        </div>
         {/* Main page content */}
         <main id="main" className="container my-8">
           {children}

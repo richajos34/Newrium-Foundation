@@ -14,6 +14,7 @@ export default function NavBar(){
     { href: '/self-actualization', label: 'Self-Actualization' },
     { href: '/parenting', label: 'Parenting' },
     { href: '/blog', label: 'Blog' },
+    { href: '/about', label: 'About' },
   ]
   // What other links do we need based on the task list? 
   // Hint: "true wealth", "true self", "self-actualization", "parenting" pages
