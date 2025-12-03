@@ -50,7 +50,7 @@ export default function NavBar(){
                 <Link 
                   key={l.href}
                   href={l.href} 
-                  className={`block px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                  className={`block px-3 py-2 rounded-md text-sm font-medium transition-colors font-poppins ${
                     active 
                       ? 'bg-accent text-accent-foreground' 
                       : 'text-muted-foreground hover:text-foreground hover:bg-muted'
