@@ -9,15 +9,13 @@ export default function NavBar(){
 
   const links = [
     { href: '/', label: 'Home' },
-    { href: '/true-wealth', label: 'True Wealth' },
-    { href: '/true-self', label: 'True Self' },
-    { href: '/self-actualization', label: 'Self-Actualization' },
-    { href: '/parenting', label: 'Parenting' },
+    { href: '/pillars', label: 'Pillars' },
     { href: '/blog', label: 'Blog' },
+    { href: '/bookshelf', label: 'Bookshelf' },
     { href: '/about', label: 'About' },
+    { href: '/contact', label: 'Contact' },
+    { href: '/faq', label: 'FAQ' },
   ]
-  // What other links do we need based on the task list? 
-  // Hint: "true wealth", "true self", "self-actualization", "parenting" pages
 
   return (
     <nav className="bg-background border-b w-full fixed left-0 right-0 top-0 z-50">

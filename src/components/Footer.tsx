@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import { Mail, LinkedinIcon } from 'lucide-react';
+import Link from 'next/link';
 
 const Footer: React.FC = () => {
   return (
@@ -23,12 +24,12 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-medium mb-4">Useful Links</h3>
             <ul className="space-y-2 text-sm font-light" style={{ fontFamily: 'DM Sans, sans-serif' }}>
               <li><a href="/" className="text-gray-400 hover:text-white transition-colors">Home</a></li>
-              <li><a href="/" className="text-gray-400 hover:text-white transition-colors">Pillars</a></li>
+              <li><a href="/pillars" className="text-gray-400 hover:text-white transition-colors">Pillars</a></li>
               <li><a href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-              <li><a href="/" className="text-gray-400 hover:text-white transition-colors">Bookshelf</a></li>
+              <li><a href="/bookshelf" className="text-gray-400 hover:text-white transition-colors">Bookshelf</a></li>
               <li><a href="/about" className="text-gray-400 hover:text-white transition-colors">About</a></li>
-              <li><a href="/" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-              <li><a href="/" className="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+              <li><a href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+              <li><a href="/faq" className="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
             </ul>
           </div>
 

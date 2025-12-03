@@ -22,14 +22,14 @@ const Hero = () => {
             <a href="/about">
               <button 
                 className="flex items-center space-x-2 font-medium text-white border-(--tangerine) border-3
-                bg-(--tangerine) px-7 py-3 rounded-xl hover:bg-transparent transition-all duration-300">
+                bg-(--tangerine) px-7 py-3 rounded-xl hover:backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
                 <span>Learn More</span>
               </button>
             </a>
             <a href="/contact">
               <button 
                 className="flex items-center space-x-2 text-(--foreground) font-medium px-8 py-3 border-white
-                rounded-xl bg-white hover:bg-transparent border-3 hover:text-white transition-all duration-300">
+                rounded-xl bg-white hover:backdrop-blur-sm hover:bg-white/10 border-3 hover:text-white transition-all duration-300">
                 <span>Contact</span>
               </button>
             </a>

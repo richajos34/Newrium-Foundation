@@ -1,8 +1,8 @@
-export default function SelfActualizationPage() {
+export default function Pillars() {
     return (
       <section className="space-y-6">
         <header className="space-y-2">
-          <h1 className="text-3xl font-semibold">Self-Actualization</h1>
+          <h1 className="text-3xl font-semibold">Pillars</h1>
           <p className="text-sm text-gray-500">
             A starter page — fill in content, components, and any calls-to-action here.
           </p>
