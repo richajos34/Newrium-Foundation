@@ -6,7 +6,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img src="/hero-bg.png" alt=""className="absolute inset-0 w-full h-full object-cover"/>
         
-        <div className="relative z-10 w-1/2 text-left ml-30 px-10">
+        <div className="relative z-10 w-1/2 text-left ml-30 px-10 -mt-10">
           <h1 className="font-poppins font-semibold text-[40px] md:text-[64px] 
           leading-[120%] tracking-[3%] text-white text-left">
             Newrium <br />
@@ -18,7 +18,7 @@ const Hero = () => {
           Newrium Foundation helps Gen Z master financial skills, self-motivation, and confidence - giving you the tools to plan ahead and live intentionally.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-8">
+          <div className="flex flex-col sm:flex-row gap-6 -mt-3">
             <a href="/about">
               <button 
                 className="flex items-center space-x-2 font-medium text-white  
