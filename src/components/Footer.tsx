@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
               <li><a href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
               <li><a href="/bookshelf" className="text-gray-400 hover:text-white transition-colors">Bookshelf</a></li>
               <li><a href="/about" className="text-gray-400 hover:text-white transition-colors">About</a></li>
-              <li><a href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+              <li><a href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
               <li><a href="/faq" className="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
             </ul>
           </div>
@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
                 style={{ fontFamily: 'DM Sans, sans-serif' }}
               />
               <button 
-                className="px-6 py-2 rounded-r-full text-sm font-medium transition-colors"
+                className="px-6 py-2 rounded-r-full text-sm font-medium transition-colors active:scale-96 active:duration-75"
                 style={{ backgroundColor: '#55A5BC', fontFamily: 'Poppins, sans-serif' }}
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#444444'}
                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#55A5BC'}
@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
           <div className="flex gap-3">
             <a 
               href="#" 
-              className="w-10 h-10 rounded-full flex items-center justify-center transition-colors"
+              className="w-10 h-10 rounded-full flex items-center justify-center transition-colors active:scale-96 active:duration-75"
               style={{ backgroundColor: '#55A5BC' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#444444'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#55A5BC'}
@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
             </a>
             <a 
               href="#" 
-              className="w-10 h-10 rounded-full flex items-center justify-center transition-colors"
+              className="w-10 h-10 rounded-full flex items-center justify-center transition-colors active:scale-96 active:duration-75"
               style={{ backgroundColor: '#55A5BC' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#444444'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#55A5BC'}

@@ -1,5 +1,3 @@
-
-
 const Hero = () => {
   return (
       <section id="home" className="relative min-h-screen w-full flex items-center justify-start overflow-hidden">

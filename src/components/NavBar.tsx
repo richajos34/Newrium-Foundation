@@ -13,7 +13,7 @@ export default function NavBar(){
     { href: '/blog', label: 'Blog' },
     { href: '/bookshelf', label: 'Bookshelf' },
     { href: '/about', label: 'About' },
-    { href: '/contact', label: 'Contact' },
+    { href: '/contact', label: 'Contact Us' },
     { href: '/faq', label: 'FAQ' },
   ]
 
