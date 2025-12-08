@@ -1,10 +1,8 @@
 'use client'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
 export default function NavBar(){
-  const pathname = usePathname()
   const [open, setOpen] = useState(false)
 
   // TODO: What other links do we need based on the task list? 

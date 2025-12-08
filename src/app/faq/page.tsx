@@ -1,13 +1,10 @@
 "use client";
 
 import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
-import BlogBanner from "@/components/BlogBanner";
-import Carousel from "@/components/Carousel";
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const stripes = [
     { type: 'image', src: "https://images.unsplash.com/photo-1446034295857-c39f8844fad4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170", height: 'calc(101vh - 64px)' },
@@ -40,14 +37,14 @@ export default function FAQ() {
     }
   ];
 
-  const toggleAccordion = (index) => {
+  const toggleAccordion = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
     <main style={{ padding: 0, paddingTop: '0px' }}>
       {/* Stripes with Title */}
-      <div style={{ 
+      <div style={{
         display: 'flex',
         gap: '3vw',
         alignItems: 'flex-start',
@@ -65,30 +62,30 @@ export default function FAQ() {
                   style={{
                     width: '100%',
                     height: stripe.height,
-                    ...(stripe.type === 'image' 
+                    ...(stripe.type === 'image'
                       ? {
-                          backgroundImage: `url(${stripe.src})`,
-                          backgroundSize: 'cover',
-                          backgroundPosition: 'center'
-                        }
+                        backgroundImage: `url(${stripe.src})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center'
+                      }
                       : {
-                          backgroundColor: stripe.color
-                        }
+                        backgroundColor: stripe.color
+                      }
                     )
                   }}
                 />
-                
+
                 {/* Title directly below middle stripe */}
-                <div style={{ 
+                <div style={{
                   textAlign: 'center',
                   marginTop: 'clamp(1rem, 2vw, 2rem)',
                   marginBottom: 'clamp(1rem, 2vw, 2rem)',
                   width: 'clamp(300px, 40vw, 500px)',
                   padding: '0 1rem'
                 }}>
-                  <h2 style={{ 
-                    fontSize: 'clamp(2rem, 4vw, 3.5rem)', 
-                    fontWeight: 'bold', 
+                  <h2 style={{
+                    fontSize: 'clamp(2rem, 4vw, 3.5rem)',
+                    fontWeight: 'bold',
                     lineHeight: '1.2',
                     margin: 0,
                     color: '#1f2937'
@@ -99,7 +96,7 @@ export default function FAQ() {
               </div>
             );
           }
-          
+
           // All other stripes
           return (
             <div
@@ -108,15 +105,15 @@ export default function FAQ() {
                 width: '16vw',
                 height: stripe.height,
                 flexShrink: 0,
-                ...(stripe.type === 'image' 
+                ...(stripe.type === 'image'
                   ? {
-                      backgroundImage: `url(${stripe.src})`,
-                      backgroundSize: 'cover',
-                      backgroundPosition: 'center'
-                    }
+                    backgroundImage: `url(${stripe.src})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                  }
                   : {
-                      backgroundColor: stripe.color
-                    }
+                    backgroundColor: stripe.color
+                  }
                 )
               }}
             />
@@ -127,7 +124,7 @@ export default function FAQ() {
       {/* FAQ Section */}
       <div style={{ maxWidth: '900px', margin: '4rem auto 3rem', padding: '0 clamp(1rem, 3vw, 1.5rem)' }}>
 
-        <div style={{ 
+        <div style={{
           border: '4px solid #fb923c',
           overflow: 'hidden'
         }}>
@@ -160,8 +157,8 @@ export default function FAQ() {
                   }
                 }}
               >
-                <span style={{ 
-                  fontSize: 'clamp(1rem, 2vw, 1.25rem)', 
+                <span style={{
+                  fontSize: 'clamp(1rem, 2vw, 1.25rem)',
                   fontWeight: '600',
                   color: '#1f2937'
                 }}>
@@ -180,7 +177,7 @@ export default function FAQ() {
                     minHeight: '24px'
                   }}
                 >
-                  <path d="M7 10l5 5 5-5z"/>
+                  <path d="M7 10l5 5 5-5z" />
                 </svg>
               </button>
               <div
@@ -204,8 +201,8 @@ export default function FAQ() {
         </div>
       </div>
 
-      <p style={{ marginTop: '3rem', padding: '0 24px' }}>
-        <a href="/">← Back to home</a>
+      <p style={{ marginTop: "3rem", padding: "0 24px" }}>
+        <Link href="/">← Back to home</Link>
       </p>
     </main>
   );
