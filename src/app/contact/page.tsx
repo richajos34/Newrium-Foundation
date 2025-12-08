@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faInstagram, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+
 export default function ContactPage() {
   return (
     <main style={{ padding: 24 }}>
@@ -29,18 +32,18 @@ export default function ContactPage() {
                   Socials
                 </h2>
                 <div className="flex flex-row mt-1 items-center space-x-3">
-                  <button className="w-10 h-10 rounded-full flex items-center justify-center border-3 hover:bg-(--slate) text-white
-                    transition-colors active:scale-96 active:duration-75 bg-(--teal) border-(--teal) hover:border-(--slate)">
-                      <span>f</span>
-                    </button>
-                    <button className="w-10 h-10 rounded-full flex items-center justify-center border-3 hover:bg-(--slate) text-white
-                    transition-colors active:scale-96 active:duration-75 bg-(--teal) border-(--teal) hover:border-(--slate)">
-                      <span>t</span>
-                    </button>
-                    <button className="w-10 h-10 rounded-full flex items-center justify-center border-3 hover:bg-(--slate) text-white
-                    transition-colors active:scale-96 active:duration-75 bg-(--teal) border-(--teal) hover:border-(--slate)">
-                      <span>i</span>
-                    </button>
+                  <button className="w-10 h-10 rounded-full flex items-center justify-center border-3 hover:bg-[#444444] text-white
+                    transition-colors active:scale-96 active:duration-75 bg-(--teal) border-(--teal) hover:border-[#444444]">
+                      <FontAwesomeIcon icon={faFacebookF} className="w-4 h-4"/>
+                  </button>
+                  <button className="w-10 h-10 rounded-full flex items-center justify-center border-3 hover:bg-[#444444] text-white
+                  transition-colors active:scale-96 active:duration-75 bg-(--teal) border-(--teal) hover:border-[#444444]">
+                    <FontAwesomeIcon icon={faXTwitter} className="w-4 h-4"/>
+                  </button>
+                  <button className="w-10 h-10 rounded-full flex items-center justify-center border-3 hover:bg-[#444444] text-white
+                  transition-colors active:scale-96 active:duration-75 bg-(--teal) border-(--teal) hover:border-[#444444]">
+                    <FontAwesomeIcon icon={faInstagram} className="w-4 h-4"/>
+                  </button>
                 </div>
               </div>
             </div>
@@ -80,7 +83,7 @@ export default function ContactPage() {
           </div>
           <div className="flex items-center justify-end -mt-1">
             <button 
-              className="bg-(--teal) hover:bg-(--slate) border text-white font-poppins font-bold py-2 px-4 rounded-md transition-colors active:scale-96 active:duration-75" 
+              className="bg-(--teal) hover:bg-[#444444] border text-white font-poppins font-bold py-2 px-4 rounded-md transition-colors active:scale-96 active:duration-75" 
               type="submit">
               Send Message
             </button>
