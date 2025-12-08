@@ -1,38 +1,41 @@
-
-
 const Hero = () => {
-    
   return (
-    <div className=''>
-    {/* Hero Section */}
-      <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-             backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('/placeholder-background.png')`
-          }}
-        />
+      <section id="home" className="relative min-h-screen w-full flex items-center justify-start overflow-hidden">
+        <div className="absolute inset-0 bg-black/50 z-10" />
+        <img src="/hero-bg.png" alt=""className="absolute inset-0 w-full h-full object-cover"/>
         
-        <div className="relative z-10 text-center max-w-6xl mx-auto px-4">
-          <h1 className="md:text-8xl font-bold text-white mb-6 leading-tight">
-            Newrium Foundation
+        <div className="relative z-10 w-1/2 text-left ml-30 px-10 -mt-10">
+          <h1 className="font-poppins font-semibold text-[40px] md:text-[64px] 
+          leading-[120%] tracking-[3%] text-white text-left">
+            Newrium <br />
+            Foundation Inc.
           </h1>
           
-          <p className="text-lg md:text-xl text-gray-100 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Your powers are within you. Transforming our humanity together.
+          <p className="font-dm font-normal text-[16px] md:text-[20px] leading-[110%] tracking-[0%]
+           text-gray-100 mb-12 max-w-3xl text-left pt-5">
+          Newrium Foundation helps Gen Z master financial skills, self-motivation, and confidence - giving you the tools to plan ahead and live intentionally.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="/tutorials">
+          <div className="flex flex-col sm:flex-row gap-6 -mt-3">
+            <a href="/about">
               <button 
-                className="flex items-center space-x-2 text-white border-2 border-white px-8 py-2 rounded-full hover:bg-white hover:text-gray-900 transition-all duration-300">
-                <span>Get Started</span>
+                className="flex items-center space-x-2 font-medium text-white border-(--tangerine) border-3
+                bg-(--tangerine) px-7 py-3 rounded-xl hover:backdrop-blur-sm hover:bg-white/10 transition-all duration-300
+                active:scale-96 active:duration-75">
+                <span>Learn More</span>
+              </button>
+            </a>
+            <a href="/contact">
+              <button 
+                className="flex items-center space-x-2 text-(--foreground) font-medium px-8 py-3 border-white
+                rounded-xl bg-white hover:backdrop-blur-sm hover:bg-white/10 border-3 hover:text-white transition-all 
+                duration-300 active:scale-96 active:duration-75">
+                <span>Contact</span>
               </button>
             </a>
           </div>
         </div>
       </section>
-    </div>
   )
 }
 
