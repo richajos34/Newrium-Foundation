@@ -7,6 +7,8 @@ export default function NavBar(){
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
 
+  // TODO: What other links do we need based on the task list? 
+  // Hint: "true wealth", "true self", "self-actualization", "parenting" pages 
   const links = [
     { href: '/', label: 'Home' },
     { href: '/true-wealth', label: 'True Wealth' },
