@@ -1,11 +1,12 @@
 'use client'
 import React from 'react';
 import { Mail, LinkedinIcon } from 'lucide-react';
+import Link from 'next/link';
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-black text-white py-7 px-8" style={{ fontFamily: 'Poppins, sans-serif' }}>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-none mx-auto">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Brand Section */}
@@ -23,12 +24,12 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-medium mb-4">Useful Links</h3>
             <ul className="space-y-2 text-sm font-light" style={{ fontFamily: 'DM Sans, sans-serif' }}>
               <li><a href="/" className="text-gray-400 hover:text-white transition-colors">Home</a></li>
-              <li><a href="/" className="text-gray-400 hover:text-white transition-colors">Pillars</a></li>
+              <li><a href="/pillars" className="text-gray-400 hover:text-white transition-colors">Pillars</a></li>
               <li><a href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-              <li><a href="/" className="text-gray-400 hover:text-white transition-colors">Bookshelf</a></li>
+              <li><a href="/bookshelf" className="text-gray-400 hover:text-white transition-colors">Bookshelf</a></li>
               <li><a href="/about" className="text-gray-400 hover:text-white transition-colors">About</a></li>
-              <li><a href="/" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-              <li><a href="/" className="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+              <li><a href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+              <li><a href="/faq" className="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
             </ul>
           </div>
 
@@ -55,9 +56,9 @@ const Footer: React.FC = () => {
                 style={{ fontFamily: 'DM Sans, sans-serif' }}
               />
               <button 
-                className="px-6 py-2 rounded-r-full text-sm font-medium transition-colors"
+                className="px-6 py-2 rounded-r-full text-sm font-medium transition-colors active:scale-96 active:duration-75"
                 style={{ backgroundColor: '#55A5BC', fontFamily: 'Poppins, sans-serif' }}
-                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0A0908'}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#444444'}
                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#55A5BC'}
               >
                 Submit
@@ -79,9 +80,9 @@ const Footer: React.FC = () => {
           <div className="flex gap-3">
             <a 
               href="#" 
-              className="w-10 h-10 rounded-full flex items-center justify-center transition-colors"
+              className="w-10 h-10 rounded-full flex items-center justify-center transition-colors active:scale-96 active:duration-75"
               style={{ backgroundColor: '#55A5BC' }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0A0908'}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#444444'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#55A5BC'}
               aria-label="Email"
             >
@@ -89,9 +90,9 @@ const Footer: React.FC = () => {
             </a>
             <a 
               href="#" 
-              className="w-10 h-10 rounded-full flex items-center justify-center transition-colors"
+              className="w-10 h-10 rounded-full flex items-center justify-center transition-colors active:scale-96 active:duration-75"
               style={{ backgroundColor: '#55A5BC' }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0A0908'}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#444444'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#55A5BC'}
               aria-label="LinkedIn"
             >

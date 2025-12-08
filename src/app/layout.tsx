@@ -18,7 +18,7 @@ const poppins = Poppins({
 const dmSans = DM_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
-  variable: "--font-dm",        // <-- ADD THIS
+  variable: "--font-dm",
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -34,10 +34,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* NavBar */}
         <NavBar />
-        <div className="pt-3">
-        </div>
         {/* Main page content */}
-        <main id="main" className="container my-8">
+        <main id="main" className="py-8 h-full"> 
           {children}
         </main>
 

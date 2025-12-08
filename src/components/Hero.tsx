@@ -1,5 +1,3 @@
-
-
 const Hero = () => {
   return (
       <section id="home" className="relative min-h-screen w-full flex items-center justify-start overflow-hidden">
@@ -21,15 +19,17 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-6 -mt-3">
             <a href="/about">
               <button 
-                className="flex items-center space-x-2 font-medium text-white  
-                bg-(--tangerine) px-7 py-3 rounded-xl hover:bg-white hover:text-gray-900 transition-all duration-300">
+                className="flex items-center space-x-2 font-medium text-white border-(--tangerine) border-3
+                bg-(--tangerine) px-7 py-3 rounded-xl hover:backdrop-blur-sm hover:bg-white/10 transition-all duration-300
+                active:scale-96 active:duration-75">
                 <span>Learn More</span>
               </button>
             </a>
             <a href="/contact">
               <button 
-                className="flex items-center space-x-2 text-(--foreground) font-medium px-8 py-3
-                rounded-xl bg-white hover:bg-(--tangerine) hover:text-white transition-all duration-300">
+                className="flex items-center space-x-2 text-(--foreground) font-medium px-8 py-3 border-white
+                rounded-xl bg-white hover:backdrop-blur-sm hover:bg-white/10 border-3 hover:text-white transition-all 
+                duration-300 active:scale-96 active:duration-75">
                 <span>Contact</span>
               </button>
             </a>
