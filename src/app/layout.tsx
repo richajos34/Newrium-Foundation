@@ -34,10 +34,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* NavBar */}
         <NavBar />
-        <div className="pt-3">
-        </div>
         {/* Main page content */}
-        <main id="main" className="my-8">
+        <main id="main" className="py-8 h-full"> 
           {children}
         </main>
 
