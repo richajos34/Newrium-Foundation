@@ -45,7 +45,6 @@ export default function NavBar(){
         <div id="nav-links" className={`${open ? 'block' : 'hidden'} md:items-center md:flex gap-2`}>
           <div className="px-2 pt-2 pb-3 sm:px-3 flex flex-col md:flex-row md:items-center gap-1 md:gap-2">
             {links.map(l => {
-              const active = pathname === l.href
               return (
                 <Link 
                   key={l.href}
