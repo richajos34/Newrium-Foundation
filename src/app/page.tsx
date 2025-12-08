@@ -1,9 +1,10 @@
-import NavBar from '@/components/NavBar'
+import Hero from '@/components/Hero';
+import NavBar from '@/components/NavBar';
 
 export default function Page(){
   return (
     <div>
-      <NavBar />
+      <Hero />
       <div className="pt-16">
         {/* Page content goes here */}
       </div>

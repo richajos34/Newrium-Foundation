@@ -15,14 +15,18 @@ export default function NavBar(){
     { href: '/true-self', label: 'True Self' },
     { href: '/self-actualization', label: 'Self-Actualization' },
     { href: '/parenting', label: 'Parenting' },
+    { href: '/blog', label: 'Blog' },
+    { href: '/about', label: 'About' },
   ]
+  // What other links do we need based on the task list? 
+  // Hint: "true wealth", "true self", "self-actualization", "parenting" pages
 
   return (
-    <nav className="bg-background border-b w-full fixed top-0 left-0 right-0 z-50">
-      <div className="flex justify-between items-center h-16 px-4 sm:px-6 lg:px-8">
-          <Link href="/" className="flex items-center gap-2 font-bold">
+    <nav className="bg-background border-b w-full fixed left-0 right-0 top-0 z-50">
+      <div className="flex justify-between items-center h-16 px-4 sm:px-6 lg:px-8 bg-(--foreground)">
+          <Link href="/" className="flex items-center gap-2 font-semibold text-(--background)">
             <span className="size-7 rounded-md" style={{background:'var(--accent)'}} />
-            <span>Newrium</span>
+            <span>Newrium Foundation Inc.</span>
           </Link>
 
           {/* Mobile menu button */}
@@ -48,10 +52,11 @@ export default function NavBar(){
                 <Link 
                   key={l.href}
                   href={l.href} 
-                  className={`block px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                  className={`block px-3 py-2 rounded-md text-sm font-medium 
+                    text-(--background) hover:font-bold font-poppins ${
                     active 
-                      ? 'bg-accent text-accent-foreground' 
-                      : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                      ? 'text-(--background)' 
+                      : 'text-(--background)'
                   }`}
                   onClick={() => setOpen(false)}
                 >
