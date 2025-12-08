@@ -2,6 +2,9 @@
 
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import BlogBanner from "@/components/BlogBanner";
+import Carousel from "@/components/Carousel";
+import Link from "next/link";
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);

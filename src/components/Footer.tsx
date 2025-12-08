@@ -7,8 +7,10 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-black text-white py-7 px-8" style={{ fontFamily: 'Poppins, sans-serif' }}>
       <div className="max-w-none mx-auto">
+
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+
           {/* Brand Section */}
           <div>
             <h2 className="text-xl font-semibold mb-4">
@@ -23,13 +25,13 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-medium mb-4">Useful Links</h3>
             <ul className="space-y-2 text-sm font-light" style={{ fontFamily: 'DM Sans, sans-serif' }}>
-              <li><a href="/" className="text-gray-400 hover:text-white transition-colors">Home</a></li>
-              <li><a href="/pillars" className="text-gray-400 hover:text-white transition-colors">Pillars</a></li>
-              <li><a href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-              <li><a href="/bookshelf" className="text-gray-400 hover:text-white transition-colors">Bookshelf</a></li>
-              <li><a href="/about" className="text-gray-400 hover:text-white transition-colors">About</a></li>
-              <li><a href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
-              <li><a href="/faq" className="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+              <li><Link href="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
+              <li><Link href="/pillars" className="text-gray-400 hover:text-white transition-colors">Pillars</Link></li>
+              <li><Link href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link></li>
+              <li><Link href="/bookshelf" className="text-gray-400 hover:text-white transition-colors">Bookshelf</Link></li>
+              <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors">About</Link></li>
+              <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact Us</Link></li>
+              <li><Link href="/faq" className="text-gray-400 hover:text-white transition-colors">FAQ</Link></li>
             </ul>
           </div>
 
@@ -65,6 +67,7 @@ const Footer: React.FC = () => {
               </button>
             </div>
           </div>
+
         </div>
 
         {/* Divider */}
@@ -75,11 +78,11 @@ const Footer: React.FC = () => {
           <p className="text-sm text-gray-400 font-light" style={{ fontFamily: 'DM Sans, sans-serif' }}>
             Copyright © 2025 Newrium Foundation, Inc. - All Rights Reserved.
           </p>
-          
-          {/* Social Icons */}
+
+          {/* Social Icons — still <a> because they are external */}
           <div className="flex gap-3">
             <a 
-              href="#" 
+              href="mailto:placeholder@company.org"
               className="w-10 h-10 rounded-full flex items-center justify-center transition-colors active:scale-96 active:duration-75"
               style={{ backgroundColor: '#55A5BC' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#444444'}
@@ -88,8 +91,11 @@ const Footer: React.FC = () => {
             >
               <Mail size={20} />
             </a>
+
             <a 
-              href="#" 
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-full flex items-center justify-center transition-colors active:scale-96 active:duration-75"
               style={{ backgroundColor: '#55A5BC' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#444444'}
@@ -100,6 +106,7 @@ const Footer: React.FC = () => {
             </a>
           </div>
         </div>
+
       </div>
     </footer>
   );

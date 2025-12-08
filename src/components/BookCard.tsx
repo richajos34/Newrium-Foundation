@@ -1,6 +1,4 @@
 // src/components/BookCard.tsx
-import Image from "next/image";
-
 interface BookCardProps {
   title: string;
   author: string;

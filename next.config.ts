@@ -1,9 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-    turbopack: {
-    root: __dirname,
-  },
+  turbopack: {},
+
+  output: "export",
+
+  basePath: "/Newrium-Foundation",
+  assetPrefix: "/Newrium-Foundation/",
 };
 
 export default nextConfig;
