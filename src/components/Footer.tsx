@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import { Mail, LinkedinIcon } from 'lucide-react';
+import { Mail, Linkedin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -95,7 +95,7 @@ const Footer: React.FC = () => {
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#55A5BC'}
               aria-label="LinkedIn"
             >
-              <LinkedinIcon size={20} />
+              <Linkedin size={20} />
             </a>
           </div>
         </div>
